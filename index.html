@@ -268,50 +268,6 @@
     .yt-btn span { position: relative; z-index: 1; }
     .yt-icon { font-size: 30px; }
 
-
-    /* Button stack + Instagram button */
-    .btn-stack {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 22px;
-    }
-    .ig-btn {
-      position: relative;
-      display: inline-flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 12px;
-      text-decoration: none;
-      padding: 22px 48px;
-      border: 2px solid var(--pink);
-      color: var(--pink);
-      font-family: 'Press Start 2P', monospace;
-      font-size: 10px;
-      letter-spacing: 4px;
-      overflow: hidden;
-      transition: color 0.15s ease;
-      animation: fadeUp 0.8s ease 1.1s both;
-      box-shadow:
-        0 0 18px rgba(255,0,204,0.25),
-        inset 0 0 18px rgba(255,0,204,0.04);
-      -webkit-tap-highlight-color: transparent;
-    }
-    .ig-btn::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: var(--pink);
-      transform: scaleX(0);
-      transform-origin: left;
-      transition: transform 0.18s ease;
-    }
-    .ig-btn:hover { color: #000; box-shadow: 0 0 50px rgba(255,0,204,0.75); }
-    .ig-btn:hover::before { transform: scaleX(1); }
-    .ig-btn:active { transform: scale(0.96); }
-    .ig-btn span, .ig-btn svg { position: relative; z-index: 1; }
-    .ig-icon { width: 30px; height: 30px; }
-
     /* ── Animations ──────────────────────────────────────────── */
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(16px); }
@@ -2081,20 +2037,10 @@ c-68 -39 -115 -192 -125 -401 -3 -67 -10 -125 -14 -128 -5 -3 -9 -16 -9 -29 0
     <div class="divider"></div>
     <p class="tagline">BEATS · BASS · ENERGY</p>
     <p class="watch-label">▶ WATCH THE SETS ◀</p>
-<div class="btn-stack">
-      <a href="https://www.youtube.com/@QuickSniff" target="_blank" class="yt-btn">
+    <a href="https://www.youtube.com/@QuickSniff" target="_blank" class="yt-btn">
       <span class="yt-icon">▶</span>
       <span>YOUTUBE</span>
     </a>
-      <a href="https://www.instagram.com/quick_sniff?xtok=bzE2OTRheWVlOGE=" target="_blank" rel="noopener" class="ig-btn">
-        <svg class="ig-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <rect x="3" y="3" width="18" height="18" rx="5"></rect>
-          <circle cx="12" cy="12" r="4"></circle>
-          <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"></circle>
-        </svg>
-        <span>INSTAGRAM</span>
-      </a>
-    </div>
   </div>
 
   <script>
